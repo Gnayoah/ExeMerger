@@ -1,3 +1,7 @@
+简体中文 - [简体中文](https://github.com/Gnayoah/ExeMerger/blob/main/README_CN.md)
+
+
+
 # ExeMerger
 
 A tool to merge exe, dll, and other program files or folders into a single executable.
