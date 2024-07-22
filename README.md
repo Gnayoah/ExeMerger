@@ -1,4 +1,4 @@
-简体中文 - [简体中文](https://github.com/Gnayoah/ExeMerger/blob/main/README_CN.md)
+[简体中文](https://github.com/Gnayoah/ExeMerger/blob/main/README_CN.md)
 
 
 
