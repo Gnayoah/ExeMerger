@@ -48,22 +48,6 @@ ExeMerger is a tool designed to merge executable files (exe), dynamic link libra
     - Set the extracted folder to hidden.
     - Execute `demo.exe` with administrative privileges.
 
-### Example
-
-If you have a file named `myapp.zip` and inside this zip file, the main executable is named `myapp.exe`:
-
-1. Rename `myapp.zip` to `demo.zip`.
-2. Make sure `myapp.exe` is the executable file inside the zip archive.
-
-```plaintext
-ExeMerger/
-│
-├── Program.cs
-├── demo.zip (your zipped files)
-└── publish/
-    └── ExeMerger.exe (generated after publish)
-```
-
 
 ## Code Explanation
 
