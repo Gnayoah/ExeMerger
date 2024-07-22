@@ -1,0 +1,80 @@
+# ExeMerger
+
+A tool to merge exe, dll, and other program files or folders into a single executable.
+
+## License
+
+This project is licensed under the GPL-3.0 License.
+
+## Description
+
+ExeMerger is a tool designed to merge executable files (exe), dynamic link libraries (dll), and other program files or folders into a single executable file. This can be particularly useful for deploying applications in a single, self-contained executable.
+
+## How to Use
+
+### Prerequisites
+
+- .NET Core SDK
+- PowerShell
+
+### Instructions
+
+1. **Clone the Repository**:
+
+    ```bash
+    git clone https://github.com/Gnayoah/ExeMerger.git
+    cd ExeMerger
+    ```
+
+2. **Replace `demo.zip` and `demo.exe`**:
+
+    - Place your zipped files (containing the necessary exe, dll, and other files) in the root directory of the project and rename it to `demo.zip`.
+    - Replace `demo.exe` with your executable file name inside the zip archive.
+
+3. **Build and Publish the Project**:
+
+    Use the following command to publish the project as a single executable:
+
+    ```bash
+    dotnet publish -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:PublishTrimmed=true -o ./publish
+    ```
+
+    This command will create a single executable in the `./publish` directory.
+
+4. **Run the Executable**:
+
+    After publishing, run the generated executable file. The program will:
+    - Extract `demo.zip` to the Local Application Data directory.
+    - Set the extracted folder to hidden.
+    - Execute `demo.exe` with administrative privileges.
+
+### Example
+
+If you have a file named `myapp.zip` and inside this zip file, the main executable is named `myapp.exe`:
+
+1. Rename `myapp.zip` to `demo.zip`.
+2. Make sure `myapp.exe` is the executable file inside the zip archive.
+
+```plaintext
+ExeMerger/
+│
+├── Program.cs
+├── demo.zip (your zipped files)
+└── publish/
+    └── ExeMerger.exe (generated after publish)
+```
+
+
+## Code Explanation
+
+- **Main method**: Sets up the directory and extracts the embedded `demo.zip` resource.
+- **ExtractEmbeddedResource method**: Extracts the zip file to a specified directory.
+- **RunAsAdmin method**: Runs the `demo.exe` file with administrative privileges.
+
+## Support
+
+For any issues or questions, please open an issue on the GitHub repository.
+
+## Authors
+
+- Gnayoah - [Gnayoah.com](https://gnayoah.com)

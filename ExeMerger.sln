@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34814.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExeMerger", "ExeMerger\ExeMerger.csproj", "{2EFFD038-0263-448B-A009-5CAEDDE3F842}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EFFD038-0263-448B-A009-5CAEDDE3F842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EFFD038-0263-448B-A009-5CAEDDE3F842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EFFD038-0263-448B-A009-5CAEDDE3F842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EFFD038-0263-448B-A009-5CAEDDE3F842}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CEC52C8-EF66-473A-99C3-26FD6FBE5B19}
+	EndGlobalSection
+EndGlobal
