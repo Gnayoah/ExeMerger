@@ -8,7 +8,7 @@ A tool to merge exe, dll, and other program files or folders into a single execu
 
 ## License
 
-This project is licensed under the GPL-3.0 License.
+This project is licensed under the AGPL-3.0 License.
 
 ## Description
 
