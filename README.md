@@ -49,7 +49,6 @@ ExeMerger is a tool designed to merge executable files (exe), dynamic link libra
 
     After publishing, run the generated executable file. The program will:
     - Extract `installer.zip` to the Temp directory.
-    - Set the extracted folder to hidden.
     - Execute `installer.exe` with administrative privileges.
 
 
