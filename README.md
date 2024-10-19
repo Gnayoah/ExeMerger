@@ -30,7 +30,7 @@ ExeMerger is a tool designed to merge executable files (exe), dynamic link libra
     cd ExeMerger
     ```
 
-2. **Replace `demo.zip` and `demo.exe`**:
+2. **Replace `installer.zip` and `installer.exe`**:
 
     - Place your zipped files (containing the necessary exe, dll, and other files) in the root directory of the project and rename it to `demo.zip`.
     - Replace `demo.exe` with your executable file name inside the zip archive.
@@ -48,16 +48,16 @@ ExeMerger is a tool designed to merge executable files (exe), dynamic link libra
 4. **Run the Executable**:
 
     After publishing, run the generated executable file. The program will:
-    - Extract `demo.zip` to the Local Application Data directory.
+    - Extract `installer.zip` to the Temp directory.
     - Set the extracted folder to hidden.
-    - Execute `demo.exe` with administrative privileges.
+    - Execute `installer.exe` with administrative privileges.
 
 
 ## Code Explanation
 
-- **Main method**: Sets up the directory and extracts the embedded `demo.zip` resource.
+- **Main method**: Sets up the directory and extracts the embedded `installer.zip` resource.
 - **ExtractEmbeddedResource method**: Extracts the zip file to a specified directory.
-- **RunAsAdmin method**: Runs the `demo.exe` file with administrative privileges.
+- **RunAsAdmin method**: Runs the `installer.exe` file with administrative privileges.
 
 ## Support
 
