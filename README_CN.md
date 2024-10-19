@@ -46,15 +46,8 @@ ExeMerger 是一个工具，旨在将可执行文件 (exe)、动态链接库 (dl
 
     发布后，运行生成的可执行文件。程序将会：
     - 将 `installer.zip` 解压到Temp目录。
-    - 以管理员权限执行 `installer.exe`。
-
-
-
-## 代码解释
-
-- **Main 方法**：设置目录并提取嵌入的 `installer.zip` 资源。
-- **ExtractEmbeddedResource 方法**：将 zip 文件提取到指定目录。
-- **RunAsAdmin 方法**：以管理员权限运行 `installer.exe` 文件。
+    - 执行 `installer.exe`。
+      
 
 ## 支持
 
