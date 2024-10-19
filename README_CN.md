@@ -27,10 +27,10 @@ ExeMerger 是一个工具，旨在将可执行文件 (exe)、动态链接库 (dl
     cd ExeMerger
     ```
 
-2. **替换 `demo.zip` 和 `demo.exe`**：
+2. **替换 `installer.zip` 和 `installer.exe`**：
 
-    - 将包含必要的 exe、dll 和其他文件的压缩文件放置在项目的根目录，并将其重命名为 `demo.zip`。
-    - 在压缩包内，将可执行文件的名称替换为 `demo.exe`。
+    - 将包含必要的 exe、dll 和其他文件的压缩文件放置在项目的根目录，并将其重命名为 `installer.zip`。
+    - 在压缩包内，将可执行文件的名称替换为 `installer.exe`。
 
 3. **构建和发布项目**：
 
@@ -45,17 +45,16 @@ ExeMerger 是一个工具，旨在将可执行文件 (exe)、动态链接库 (dl
 4. **运行可执行文件**：
 
     发布后，运行生成的可执行文件。程序将会：
-    - 将 `demo.zip` 解压到本地应用数据目录。
-    - 将解压后的文件夹设置为隐藏。
-    - 以管理员权限执行 `demo.exe`。
+    - 将 `installer.zip` 解压到Temp目录。
+    - 以管理员权限执行 `installer.exe`。
 
 
 
 ## 代码解释
 
-- **Main 方法**：设置目录并提取嵌入的 `demo.zip` 资源。
+- **Main 方法**：设置目录并提取嵌入的 `installer.zip` 资源。
 - **ExtractEmbeddedResource 方法**：将 zip 文件提取到指定目录。
-- **RunAsAdmin 方法**：以管理员权限运行 `demo.exe` 文件。
+- **RunAsAdmin 方法**：以管理员权限运行 `installer.exe` 文件。
 
 ## 支持
 
