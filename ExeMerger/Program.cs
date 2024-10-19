@@ -1,7 +1,7 @@
 ﻿// ExeMerger by Gnayoah.com
 // View on Github https://github.com/Gnayoah/ExeMerger
 // A tool to merge exe, dll, and other program files or folders into a single executable
-// GPL-3.0 License
+// AGPL-3.0 License
 
 using System;
 using System.IO;
